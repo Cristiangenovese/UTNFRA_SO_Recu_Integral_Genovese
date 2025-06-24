@@ -1,0 +1,6 @@
+- name: Permitir sudo sin password al grupo GProfesores
+  copy:
+    dest: /etc/sudoers.d/GProfesores
+    content: "%GProfesores ALL=(ALL) NOPASSWD:ALL\n"
+    mode: '0440'
+
