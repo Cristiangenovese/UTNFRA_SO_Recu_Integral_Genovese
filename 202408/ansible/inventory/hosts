@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [all:children]
 testing
 produccion
@@ -7,3 +8,8 @@ produccion
 
 [produccion]
 localhost ansible_connection=local 
+=======
+[all]
+127.0.0.1 ansible_connection=ssh ansible_user=CGenovese ansible_ssh_private_key_file=~/.ssh/id_ed25519
+
+>>>>>>> 39b8158 (Entrega completa del Recuperatorio Integral AySO - Cristian Genovese Final)

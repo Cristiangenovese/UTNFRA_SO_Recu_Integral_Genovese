@@ -200,3 +200,141 @@ nano RTA_Examen_20250624/Punto_E.sh
 exit
 nano RTA_Examen_20250624/Punto_E.sh
 exit
+<<<<<<< HEAD
+=======
+. RTA_Examen_20250624/Punto_E.sh
+cd ..
+pwd
+ll
+cd 202408/
+ll
+cd ansible/
+ll
+nano README.md 
+ll
+ll inventory/
+nano playbook.yml 
+sudonano playbook.yml 
+sudo nano playbook.yml 
+cat inventory/host
+ll inventory/
+nano inventory/host
+sudo nano inventory/host
+cd inventory/
+nano host
+sudo nano host
+sudo nano hosts
+cd ..
+cd roles/
+ll
+cd .. 
+mkdir -p roles/2PRecuperatorio/templates
+sudo mkdir -p roles/2PRecuperatorio/templates
+sudo mkdir -p roles/Instalar-tools_Genovese/tasks
+sudo mkdir -p roles/Alta_Usuario_Genovese/tasks
+sudo mkdir -p roles/Sudoers_Genovese/tasks
+sudo sudo nano roles/2PRecuperatorio/tasks/main.yml
+sudo sudo nano roles/2PRecuperatorio/templates/datos.j2
+sudo sudo nano roles/Instalar-tools_Genovese/tasks/main.yml
+sudo sudo nano roles/Alta_Usuario_Genovese/tasks/main.yml
+sudo sudo nano roles/Sudoers_Genovese/tasks/main.yml
+exit
+cd 202408/ansible/
+tree roles
+roles
+├── 2PRecuperatorio
+│   ├── README.md
+│   ├── defaults
+│   │   └── main.yml
+│   ├── handlers
+│   │   └── main.yml
+│   ├── meta
+│   │   └── main.yml
+│   ├── tasks
+│   │   └── main.yml
+│   ├── templates
+│   │   └── datos.j2
+│   ├── tests
+│   │   ├── inventory
+│   │   └── test.yml
+│   └── vars
+│       └── main.yml
+├── Alta_Usuario_Genovese
+│   └── tasks
+│       └── main.yml
+├── Instalar-tools_Genovese
+│   └── tasks
+│       └── main.yml
+└── Sudoers_Genovese
+mv roles/Instalar-tools_Genovese roles/Instala-tools_Genovese
+sudo mv roles/Instalar-tools_Genovese roles/Instala-tools_Genovese
+tree roles
+sudo nano inventory/hosts
+whoami 
+sudo nano inventory/hosts
+exit
+. RTA_Examen_20250624/Punto_D.sh
+ll
+cd RTA_Examen_20250624/
+ll
+./Punto_E.sh
+cd ..
+ll
+cd Git_Entrega/
+git pull --rebase origin main
+git checkout --ours .bash_history
+git checkout --ours 202408/ansible/inventory/hosts
+git checkout --ours 202408/ansible/playbook.yml
+git checkout --ours 202408/ansible/roles/2PRecuperatorio/tasks/main.yml
+git add .bash_history
+git add 202408/ansible/inventory/hosts
+git add 202408/ansible/playbook.yml
+git add 202408/ansible/roles/2PRecuperatorio/tasks/main.yml
+git rebase --continue
+git push origin main
+cd ..
+ansible-playbook -i inventory/hosts playbook.yml
+cd 202408/ansible/
+ansible-playbook -i inventory/hosts playbook.yml
+cd
+ll
+cd .ssh
+ll
+cat ~/.ssh/id_ed25519.pub >> ~/.ssh/authorized_keys
+chmod 600 ~/.ssh/authorized_keys
+ll
+cd 202408/
+cd ansible/
+nano inventory/hosts
+sudo nano inventory/hosts
+ansible-playbook -i inventory/hosts playbook.yml
+# 1. Verificar el archivo generado
+cat /tmp/alumno/datos.txt
+# 2. Verificar usuarios
+getent passwd alumno
+getent passwd Profesor
+# 3. Verificar grupos
+getent group GAlumnos
+getent group GProfesores
+# 4. Verificar permisos sudo sin clave
+sudo -l -U Profesor
+# 5. Verificar herramientas instaladas
+which htop
+which tmux
+which tree
+which speedtest-cli
+sudo nano roles/2PRecuperatorio/templates/datos.j2 
+ansible-playbook -i inventory/hosts playbook.yml
+cat /tmp/alumno/datos.txt
+cd ..
+nano RTA_Examen_20250624/Punto_D.sh 
+chmod +x RTA_Examen_20250624/Punto_D.sh
+ssh 127.0.0.1
+ssh 127.0.0.1
+ll RTA_Examen_20250624
+nano RTA_Examen_20250624/Punto_A.sh
+chmod +x RTA_Examen_20250624/Punto_A.sh
+ll RTA_Examen_20250624
+./RTA_Examen_20250624/Punto_D.sh
+nano RTA_Examen_20250624/Punto_E.sh 
+>>>>>>> 39b8158 (Entrega completa del Recuperatorio Integral AySO - Cristian Genovese Final)

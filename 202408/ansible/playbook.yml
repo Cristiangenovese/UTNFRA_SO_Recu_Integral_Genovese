@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 - hosts: all
 
   tasks:
@@ -8,4 +9,14 @@
     - name: "Otra tarea"
       debug:
         msg: "Despues de la ejecucion del rol"
+=======
+- name: Ejecutar todos los roles del parcial
+  hosts: all
+  become: true
+  roles:
+    - 2PRecuperatorio
+    - Instala-tools_Genovese
+    - Alta_Usuario_Genovese
+    - Sudoers_Genovese
+>>>>>>> 39b8158 (Entrega completa del Recuperatorio Integral AySO - Cristian Genovese Final)
 

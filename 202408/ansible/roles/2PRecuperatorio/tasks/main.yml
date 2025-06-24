@@ -1,8 +1,21 @@
 ---
 # tasks file for 2PRecuperatorio
 
+<<<<<<< HEAD
  - name: "Rol: 2PRecuperatorio"
    debug:
      msg: "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+=======
+- name: Crear carpeta /tmp/alumno
+  file:
+    path: /tmp/alumno
+    state: directory
+
+- name: Crear archivo con datos del alumno
+  template:
+    src: datos.j2
+    dest: /tmp/alumno/datos.txt
+
+>>>>>>> 39b8158 (Entrega completa del Recuperatorio Integral AySO - Cristian Genovese Final)
 
 
