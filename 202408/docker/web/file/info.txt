@@ -1,0 +1,2 @@
+Modelo CPU: AMD Ryzen 5 1600 Six-Core Processor
+Frecuencia: 3200.00 MHz
