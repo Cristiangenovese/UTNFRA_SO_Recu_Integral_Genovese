@@ -99,8 +99,8 @@ UUID_SWAP2=$(blkid -s UUID -o value /dev/sdc2)
 UUID_SWAP_LVM=$(blkid -s UUID -o value /dev/mapper/vg_temp-lv_swap)
 
 echo ">>> Agregando entradas al /etc/fstab..."
-echo "UUID=$UUID_DOCKER /var/lib/docker ext4 defaults 0 0" | sudo tee -a /etc/fstab
-echo "UUID=$UUID_MULTI /Multimedia ext4 defaults 0 0" | sudo tee -a /etc/fstab
+echo "UUID=$UUID_DOCKER /var/lib/docker ext4 defaults,nofail 0 0" | sudo tee -a /etc/fstab
+echo "UUID=$UUID_MULTI /Multimedia ext4 defaults,nofail 0 0" | sudo tee -a /etc/fstab
 echo "UUID=$UUID_SWAP2 none swap sw 0 0" | sudo tee -a /etc/fstab
 echo "UUID=$UUID_SWAP_LVM none swap sw 0 0" | sudo tee -a /etc/fstab
 
