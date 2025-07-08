@@ -63,7 +63,7 @@ sleep 1
 
 echo ">>> Creando VG y LV para swap..."
 sudo vgcreate vg_temp /dev/sdc1
-sudo lvcreate -l lv_swap -n 100%FREE vg_temp
+sudo lvcreate -n lv_swap -l 100%FREE vg_temp
 sudo mkswap /dev/mapper/vg_temp-lv_swap
 sudo swapon /dev/mapper/vg_temp-lv_swap
 sleep 1
