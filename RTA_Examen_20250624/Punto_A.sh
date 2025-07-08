@@ -79,6 +79,8 @@ sudo lvcreate -L 10M -n lv_docker vg_datos
 sudo lvcreate -L 1.5G -n lv_multimedia vg_datos
 sleep 2
 
+sudo vgchange -ay
+
 echo ">>> Formateando volúmenes..."
 sudo mkfs.ext4 /dev/mapper/vg_datos-lv_docker
 sudo mkfs.ext4 /dev/mapper/vg_datos-lv_multimedia
