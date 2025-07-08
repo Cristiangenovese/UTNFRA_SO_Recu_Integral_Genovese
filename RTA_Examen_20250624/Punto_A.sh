@@ -111,3 +111,5 @@ swapon --show
 
 echo ">>> Punto A finalizado correctamente."
 
+sudo lvdisplay
+
